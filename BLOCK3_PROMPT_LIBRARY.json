@@ -1,0 +1,1653 @@
+[
+  {
+    "id": "P001",
+    "title": "Mega-cap Technology stocks",
+    "category": "Sector × size",
+    "task": "Explain the technology sector in plain English, then research mega-cap companies (above $200 billion) involved in software, semiconductors, and IT services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLK",
+    "tags": [
+      "Technology",
+      "Mega-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P002",
+    "title": "Large-cap Technology stocks",
+    "category": "Sector × size",
+    "task": "Explain the technology sector in plain English, then research large-cap companies ($10 billion to $200 billion) involved in software, semiconductors, and IT services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLK",
+    "tags": [
+      "Technology",
+      "Large-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P003",
+    "title": "Mid-cap Technology stocks",
+    "category": "Sector × size",
+    "task": "Explain the technology sector in plain English, then research mid-cap companies ($2 billion to $10 billion) involved in software, semiconductors, and IT services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLK",
+    "tags": [
+      "Technology",
+      "Mid-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P004",
+    "title": "Small-cap Technology stocks",
+    "category": "Sector × size",
+    "task": "Explain the technology sector in plain English, then research small-cap companies ($300 million to $2 billion) involved in software, semiconductors, and IT services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLK",
+    "tags": [
+      "Technology",
+      "Small-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P005",
+    "title": "Micro-cap Technology stocks",
+    "category": "Sector × size",
+    "task": "Explain the technology sector in plain English, then research micro-cap companies (below $300 million) involved in software, semiconductors, and IT services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLK",
+    "tags": [
+      "Technology",
+      "Micro-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P006",
+    "title": "Mega-cap Financials stocks",
+    "category": "Sector × size",
+    "task": "Explain the financials sector in plain English, then research mega-cap companies (above $200 billion) involved in banks, insurers, and financial technology. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLF",
+    "tags": [
+      "Financials",
+      "Mega-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P007",
+    "title": "Large-cap Financials stocks",
+    "category": "Sector × size",
+    "task": "Explain the financials sector in plain English, then research large-cap companies ($10 billion to $200 billion) involved in banks, insurers, and financial technology. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLF",
+    "tags": [
+      "Financials",
+      "Large-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P008",
+    "title": "Mid-cap Financials stocks",
+    "category": "Sector × size",
+    "task": "Explain the financials sector in plain English, then research mid-cap companies ($2 billion to $10 billion) involved in banks, insurers, and financial technology. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLF",
+    "tags": [
+      "Financials",
+      "Mid-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P009",
+    "title": "Small-cap Financials stocks",
+    "category": "Sector × size",
+    "task": "Explain the financials sector in plain English, then research small-cap companies ($300 million to $2 billion) involved in banks, insurers, and financial technology. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLF",
+    "tags": [
+      "Financials",
+      "Small-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P010",
+    "title": "Micro-cap Financials stocks",
+    "category": "Sector × size",
+    "task": "Explain the financials sector in plain English, then research micro-cap companies (below $300 million) involved in banks, insurers, and financial technology. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLF",
+    "tags": [
+      "Financials",
+      "Micro-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P011",
+    "title": "Mega-cap Healthcare stocks",
+    "category": "Sector × size",
+    "task": "Explain the healthcare sector in plain English, then research mega-cap companies (above $200 billion) involved in pharmaceuticals, medical devices, and healthcare services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLV",
+    "tags": [
+      "Healthcare",
+      "Mega-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P012",
+    "title": "Large-cap Healthcare stocks",
+    "category": "Sector × size",
+    "task": "Explain the healthcare sector in plain English, then research large-cap companies ($10 billion to $200 billion) involved in pharmaceuticals, medical devices, and healthcare services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLV",
+    "tags": [
+      "Healthcare",
+      "Large-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P013",
+    "title": "Mid-cap Healthcare stocks",
+    "category": "Sector × size",
+    "task": "Explain the healthcare sector in plain English, then research mid-cap companies ($2 billion to $10 billion) involved in pharmaceuticals, medical devices, and healthcare services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLV",
+    "tags": [
+      "Healthcare",
+      "Mid-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P014",
+    "title": "Small-cap Healthcare stocks",
+    "category": "Sector × size",
+    "task": "Explain the healthcare sector in plain English, then research small-cap companies ($300 million to $2 billion) involved in pharmaceuticals, medical devices, and healthcare services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLV",
+    "tags": [
+      "Healthcare",
+      "Small-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P015",
+    "title": "Micro-cap Healthcare stocks",
+    "category": "Sector × size",
+    "task": "Explain the healthcare sector in plain English, then research micro-cap companies (below $300 million) involved in pharmaceuticals, medical devices, and healthcare services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLV",
+    "tags": [
+      "Healthcare",
+      "Micro-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P016",
+    "title": "Mega-cap Consumer Discretionary stocks",
+    "category": "Sector × size",
+    "task": "Explain the consumer discretionary sector in plain English, then research mega-cap companies (above $200 billion) involved in retailers, restaurants, and travel businesses. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLY",
+    "tags": [
+      "Consumer Discretionary",
+      "Mega-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P017",
+    "title": "Large-cap Consumer Discretionary stocks",
+    "category": "Sector × size",
+    "task": "Explain the consumer discretionary sector in plain English, then research large-cap companies ($10 billion to $200 billion) involved in retailers, restaurants, and travel businesses. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLY",
+    "tags": [
+      "Consumer Discretionary",
+      "Large-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P018",
+    "title": "Mid-cap Consumer Discretionary stocks",
+    "category": "Sector × size",
+    "task": "Explain the consumer discretionary sector in plain English, then research mid-cap companies ($2 billion to $10 billion) involved in retailers, restaurants, and travel businesses. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLY",
+    "tags": [
+      "Consumer Discretionary",
+      "Mid-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P019",
+    "title": "Small-cap Consumer Discretionary stocks",
+    "category": "Sector × size",
+    "task": "Explain the consumer discretionary sector in plain English, then research small-cap companies ($300 million to $2 billion) involved in retailers, restaurants, and travel businesses. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLY",
+    "tags": [
+      "Consumer Discretionary",
+      "Small-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P020",
+    "title": "Micro-cap Consumer Discretionary stocks",
+    "category": "Sector × size",
+    "task": "Explain the consumer discretionary sector in plain English, then research micro-cap companies (below $300 million) involved in retailers, restaurants, and travel businesses. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLY",
+    "tags": [
+      "Consumer Discretionary",
+      "Micro-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P021",
+    "title": "Mega-cap Consumer Staples stocks",
+    "category": "Sector × size",
+    "task": "Explain the consumer staples sector in plain English, then research mega-cap companies (above $200 billion) involved in food, beverage, and household goods companies. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLP",
+    "tags": [
+      "Consumer Staples",
+      "Mega-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P022",
+    "title": "Large-cap Consumer Staples stocks",
+    "category": "Sector × size",
+    "task": "Explain the consumer staples sector in plain English, then research large-cap companies ($10 billion to $200 billion) involved in food, beverage, and household goods companies. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLP",
+    "tags": [
+      "Consumer Staples",
+      "Large-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P023",
+    "title": "Mid-cap Consumer Staples stocks",
+    "category": "Sector × size",
+    "task": "Explain the consumer staples sector in plain English, then research mid-cap companies ($2 billion to $10 billion) involved in food, beverage, and household goods companies. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLP",
+    "tags": [
+      "Consumer Staples",
+      "Mid-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P024",
+    "title": "Small-cap Consumer Staples stocks",
+    "category": "Sector × size",
+    "task": "Explain the consumer staples sector in plain English, then research small-cap companies ($300 million to $2 billion) involved in food, beverage, and household goods companies. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLP",
+    "tags": [
+      "Consumer Staples",
+      "Small-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P025",
+    "title": "Micro-cap Consumer Staples stocks",
+    "category": "Sector × size",
+    "task": "Explain the consumer staples sector in plain English, then research micro-cap companies (below $300 million) involved in food, beverage, and household goods companies. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLP",
+    "tags": [
+      "Consumer Staples",
+      "Micro-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P026",
+    "title": "Mega-cap Industrials stocks",
+    "category": "Sector × size",
+    "task": "Explain the industrials sector in plain English, then research mega-cap companies (above $200 billion) involved in manufacturing, transportation, and aerospace. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLI",
+    "tags": [
+      "Industrials",
+      "Mega-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P027",
+    "title": "Large-cap Industrials stocks",
+    "category": "Sector × size",
+    "task": "Explain the industrials sector in plain English, then research large-cap companies ($10 billion to $200 billion) involved in manufacturing, transportation, and aerospace. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLI",
+    "tags": [
+      "Industrials",
+      "Large-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P028",
+    "title": "Mid-cap Industrials stocks",
+    "category": "Sector × size",
+    "task": "Explain the industrials sector in plain English, then research mid-cap companies ($2 billion to $10 billion) involved in manufacturing, transportation, and aerospace. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLI",
+    "tags": [
+      "Industrials",
+      "Mid-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P029",
+    "title": "Small-cap Industrials stocks",
+    "category": "Sector × size",
+    "task": "Explain the industrials sector in plain English, then research small-cap companies ($300 million to $2 billion) involved in manufacturing, transportation, and aerospace. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLI",
+    "tags": [
+      "Industrials",
+      "Small-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P030",
+    "title": "Micro-cap Industrials stocks",
+    "category": "Sector × size",
+    "task": "Explain the industrials sector in plain English, then research micro-cap companies (below $300 million) involved in manufacturing, transportation, and aerospace. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLI",
+    "tags": [
+      "Industrials",
+      "Micro-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P031",
+    "title": "Mega-cap Energy stocks",
+    "category": "Sector × size",
+    "task": "Explain the energy sector in plain English, then research mega-cap companies (above $200 billion) involved in oil, gas, and energy services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLE",
+    "tags": [
+      "Energy",
+      "Mega-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P032",
+    "title": "Large-cap Energy stocks",
+    "category": "Sector × size",
+    "task": "Explain the energy sector in plain English, then research large-cap companies ($10 billion to $200 billion) involved in oil, gas, and energy services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLE",
+    "tags": [
+      "Energy",
+      "Large-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P033",
+    "title": "Mid-cap Energy stocks",
+    "category": "Sector × size",
+    "task": "Explain the energy sector in plain English, then research mid-cap companies ($2 billion to $10 billion) involved in oil, gas, and energy services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLE",
+    "tags": [
+      "Energy",
+      "Mid-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P034",
+    "title": "Small-cap Energy stocks",
+    "category": "Sector × size",
+    "task": "Explain the energy sector in plain English, then research small-cap companies ($300 million to $2 billion) involved in oil, gas, and energy services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLE",
+    "tags": [
+      "Energy",
+      "Small-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P035",
+    "title": "Micro-cap Energy stocks",
+    "category": "Sector × size",
+    "task": "Explain the energy sector in plain English, then research micro-cap companies (below $300 million) involved in oil, gas, and energy services. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLE",
+    "tags": [
+      "Energy",
+      "Micro-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P036",
+    "title": "Mega-cap Utilities stocks",
+    "category": "Sector × size",
+    "task": "Explain the utilities sector in plain English, then research mega-cap companies (above $200 billion) involved in electricity, water, and regulated utilities. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLU",
+    "tags": [
+      "Utilities",
+      "Mega-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P037",
+    "title": "Large-cap Utilities stocks",
+    "category": "Sector × size",
+    "task": "Explain the utilities sector in plain English, then research large-cap companies ($10 billion to $200 billion) involved in electricity, water, and regulated utilities. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLU",
+    "tags": [
+      "Utilities",
+      "Large-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P038",
+    "title": "Mid-cap Utilities stocks",
+    "category": "Sector × size",
+    "task": "Explain the utilities sector in plain English, then research mid-cap companies ($2 billion to $10 billion) involved in electricity, water, and regulated utilities. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLU",
+    "tags": [
+      "Utilities",
+      "Mid-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P039",
+    "title": "Small-cap Utilities stocks",
+    "category": "Sector × size",
+    "task": "Explain the utilities sector in plain English, then research small-cap companies ($300 million to $2 billion) involved in electricity, water, and regulated utilities. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLU",
+    "tags": [
+      "Utilities",
+      "Small-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P040",
+    "title": "Micro-cap Utilities stocks",
+    "category": "Sector × size",
+    "task": "Explain the utilities sector in plain English, then research micro-cap companies (below $300 million) involved in electricity, water, and regulated utilities. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLU",
+    "tags": [
+      "Utilities",
+      "Micro-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P041",
+    "title": "Mega-cap Real Estate stocks",
+    "category": "Sector × size",
+    "task": "Explain the real estate sector in plain English, then research mega-cap companies (above $200 billion) involved in REITs and property operators. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLRE",
+    "tags": [
+      "Real Estate",
+      "Mega-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P042",
+    "title": "Large-cap Real Estate stocks",
+    "category": "Sector × size",
+    "task": "Explain the real estate sector in plain English, then research large-cap companies ($10 billion to $200 billion) involved in REITs and property operators. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLRE",
+    "tags": [
+      "Real Estate",
+      "Large-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P043",
+    "title": "Mid-cap Real Estate stocks",
+    "category": "Sector × size",
+    "task": "Explain the real estate sector in plain English, then research mid-cap companies ($2 billion to $10 billion) involved in REITs and property operators. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLRE",
+    "tags": [
+      "Real Estate",
+      "Mid-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P044",
+    "title": "Small-cap Real Estate stocks",
+    "category": "Sector × size",
+    "task": "Explain the real estate sector in plain English, then research small-cap companies ($300 million to $2 billion) involved in REITs and property operators. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLRE",
+    "tags": [
+      "Real Estate",
+      "Small-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P045",
+    "title": "Micro-cap Real Estate stocks",
+    "category": "Sector × size",
+    "task": "Explain the real estate sector in plain English, then research micro-cap companies (below $300 million) involved in REITs and property operators. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLRE",
+    "tags": [
+      "Real Estate",
+      "Micro-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P046",
+    "title": "Mega-cap Materials stocks",
+    "category": "Sector × size",
+    "task": "Explain the materials sector in plain English, then research mega-cap companies (above $200 billion) involved in chemicals, metals, and building materials. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLB",
+    "tags": [
+      "Materials",
+      "Mega-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P047",
+    "title": "Large-cap Materials stocks",
+    "category": "Sector × size",
+    "task": "Explain the materials sector in plain English, then research large-cap companies ($10 billion to $200 billion) involved in chemicals, metals, and building materials. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLB",
+    "tags": [
+      "Materials",
+      "Large-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P048",
+    "title": "Mid-cap Materials stocks",
+    "category": "Sector × size",
+    "task": "Explain the materials sector in plain English, then research mid-cap companies ($2 billion to $10 billion) involved in chemicals, metals, and building materials. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLB",
+    "tags": [
+      "Materials",
+      "Mid-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P049",
+    "title": "Small-cap Materials stocks",
+    "category": "Sector × size",
+    "task": "Explain the materials sector in plain English, then research small-cap companies ($300 million to $2 billion) involved in chemicals, metals, and building materials. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLB",
+    "tags": [
+      "Materials",
+      "Small-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P050",
+    "title": "Micro-cap Materials stocks",
+    "category": "Sector × size",
+    "task": "Explain the materials sector in plain English, then research micro-cap companies (below $300 million) involved in chemicals, metals, and building materials. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLB",
+    "tags": [
+      "Materials",
+      "Micro-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P051",
+    "title": "Mega-cap Communication Services stocks",
+    "category": "Sector × size",
+    "task": "Explain the communication services sector in plain English, then research mega-cap companies (above $200 billion) involved in telecom, media, and internet platforms. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLC",
+    "tags": [
+      "Communication Services",
+      "Mega-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P052",
+    "title": "Large-cap Communication Services stocks",
+    "category": "Sector × size",
+    "task": "Explain the communication services sector in plain English, then research large-cap companies ($10 billion to $200 billion) involved in telecom, media, and internet platforms. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLC",
+    "tags": [
+      "Communication Services",
+      "Large-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P053",
+    "title": "Mid-cap Communication Services stocks",
+    "category": "Sector × size",
+    "task": "Explain the communication services sector in plain English, then research mid-cap companies ($2 billion to $10 billion) involved in telecom, media, and internet platforms. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLC",
+    "tags": [
+      "Communication Services",
+      "Mid-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P054",
+    "title": "Small-cap Communication Services stocks",
+    "category": "Sector × size",
+    "task": "Explain the communication services sector in plain English, then research small-cap companies ($300 million to $2 billion) involved in telecom, media, and internet platforms. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLC",
+    "tags": [
+      "Communication Services",
+      "Small-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P055",
+    "title": "Micro-cap Communication Services stocks",
+    "category": "Sector × size",
+    "task": "Explain the communication services sector in plain English, then research micro-cap companies (below $300 million) involved in telecom, media, and internet platforms. From a clearly identified candidate list, compare up to five companies using simple measures of valuation, business growth, profitability, financial health, and key risks. Identify three worth further study, explain why, and distinguish an attractive company from an attractive stock price. Do not claim a full-market screen unless a complete universe is actually checked.",
+    "benchmark": "XLC",
+    "tags": [
+      "Communication Services",
+      "Micro-cap",
+      "US"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P056",
+    "title": "United States: Beginner country overview",
+    "category": "Countries & regions",
+    "task": "Focus on U.S.-listed companies. Explain how this stock market works, name major sectors and representative publicly traded companies, and compare three illustrative candidates. Explain currency risk and how a U.S. investor might access the market. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "SPY",
+    "tags": [
+      "United States",
+      "Beginner country overview"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P057",
+    "title": "United States: Dividend opportunities",
+    "category": "Countries & regions",
+    "task": "Focus on U.S.-listed companies. Research up to five dividend-paying companies. Explain dividend yield, payout sustainability, currency effects, withholding taxes and business risks. Avoid assuming high yield means safety. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "SPY",
+    "tags": [
+      "United States",
+      "Dividend opportunities"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P058",
+    "title": "United States: Growth companies",
+    "category": "Countries & regions",
+    "task": "Focus on U.S.-listed companies. Compare up to five companies with strong historical revenue or earnings growth. Explain what drives demand, whether growth seems sustainable, and whether the stock price already reflects optimism. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "SPY",
+    "tags": [
+      "United States",
+      "Growth companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P059",
+    "title": "United States: Undervalued companies",
+    "category": "Countries & regions",
+    "task": "Focus on U.S.-listed companies. Identify up to five potentially inexpensive companies using suitable sector-relative valuation ratios. Explain why each may trade cheaply and assess value-trap risks. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "SPY",
+    "tags": [
+      "United States",
+      "Undervalued companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P060",
+    "title": "Canada: Beginner country overview",
+    "category": "Countries & regions",
+    "task": "Focus on Canadian-listed companies. Explain how this stock market works, name major sectors and representative publicly traded companies, and compare three illustrative candidates. Explain currency risk and how a U.S. investor might access the market. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWC",
+    "tags": [
+      "Canada",
+      "Beginner country overview"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P061",
+    "title": "Canada: Dividend opportunities",
+    "category": "Countries & regions",
+    "task": "Focus on Canadian-listed companies. Research up to five dividend-paying companies. Explain dividend yield, payout sustainability, currency effects, withholding taxes and business risks. Avoid assuming high yield means safety. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWC",
+    "tags": [
+      "Canada",
+      "Dividend opportunities"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P062",
+    "title": "Canada: Growth companies",
+    "category": "Countries & regions",
+    "task": "Focus on Canadian-listed companies. Compare up to five companies with strong historical revenue or earnings growth. Explain what drives demand, whether growth seems sustainable, and whether the stock price already reflects optimism. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWC",
+    "tags": [
+      "Canada",
+      "Growth companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P063",
+    "title": "Canada: Undervalued companies",
+    "category": "Countries & regions",
+    "task": "Focus on Canadian-listed companies. Identify up to five potentially inexpensive companies using suitable sector-relative valuation ratios. Explain why each may trade cheaply and assess value-trap risks. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWC",
+    "tags": [
+      "Canada",
+      "Undervalued companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P064",
+    "title": "United Kingdom: Beginner country overview",
+    "category": "Countries & regions",
+    "task": "Focus on UK-listed companies. Explain how this stock market works, name major sectors and representative publicly traded companies, and compare three illustrative candidates. Explain currency risk and how a U.S. investor might access the market. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWU",
+    "tags": [
+      "United Kingdom",
+      "Beginner country overview"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P065",
+    "title": "United Kingdom: Dividend opportunities",
+    "category": "Countries & regions",
+    "task": "Focus on UK-listed companies. Research up to five dividend-paying companies. Explain dividend yield, payout sustainability, currency effects, withholding taxes and business risks. Avoid assuming high yield means safety. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWU",
+    "tags": [
+      "United Kingdom",
+      "Dividend opportunities"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P066",
+    "title": "United Kingdom: Growth companies",
+    "category": "Countries & regions",
+    "task": "Focus on UK-listed companies. Compare up to five companies with strong historical revenue or earnings growth. Explain what drives demand, whether growth seems sustainable, and whether the stock price already reflects optimism. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWU",
+    "tags": [
+      "United Kingdom",
+      "Growth companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P067",
+    "title": "United Kingdom: Undervalued companies",
+    "category": "Countries & regions",
+    "task": "Focus on UK-listed companies. Identify up to five potentially inexpensive companies using suitable sector-relative valuation ratios. Explain why each may trade cheaply and assess value-trap risks. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWU",
+    "tags": [
+      "United Kingdom",
+      "Undervalued companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P068",
+    "title": "Germany: Beginner country overview",
+    "category": "Countries & regions",
+    "task": "Focus on German-listed companies. Explain how this stock market works, name major sectors and representative publicly traded companies, and compare three illustrative candidates. Explain currency risk and how a U.S. investor might access the market. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWG",
+    "tags": [
+      "Germany",
+      "Beginner country overview"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P069",
+    "title": "Germany: Dividend opportunities",
+    "category": "Countries & regions",
+    "task": "Focus on German-listed companies. Research up to five dividend-paying companies. Explain dividend yield, payout sustainability, currency effects, withholding taxes and business risks. Avoid assuming high yield means safety. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWG",
+    "tags": [
+      "Germany",
+      "Dividend opportunities"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P070",
+    "title": "Germany: Growth companies",
+    "category": "Countries & regions",
+    "task": "Focus on German-listed companies. Compare up to five companies with strong historical revenue or earnings growth. Explain what drives demand, whether growth seems sustainable, and whether the stock price already reflects optimism. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWG",
+    "tags": [
+      "Germany",
+      "Growth companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P071",
+    "title": "Germany: Undervalued companies",
+    "category": "Countries & regions",
+    "task": "Focus on German-listed companies. Identify up to five potentially inexpensive companies using suitable sector-relative valuation ratios. Explain why each may trade cheaply and assess value-trap risks. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWG",
+    "tags": [
+      "Germany",
+      "Undervalued companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P072",
+    "title": "France: Beginner country overview",
+    "category": "Countries & regions",
+    "task": "Focus on French-listed companies. Explain how this stock market works, name major sectors and representative publicly traded companies, and compare three illustrative candidates. Explain currency risk and how a U.S. investor might access the market. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWQ",
+    "tags": [
+      "France",
+      "Beginner country overview"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P073",
+    "title": "France: Dividend opportunities",
+    "category": "Countries & regions",
+    "task": "Focus on French-listed companies. Research up to five dividend-paying companies. Explain dividend yield, payout sustainability, currency effects, withholding taxes and business risks. Avoid assuming high yield means safety. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWQ",
+    "tags": [
+      "France",
+      "Dividend opportunities"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P074",
+    "title": "France: Growth companies",
+    "category": "Countries & regions",
+    "task": "Focus on French-listed companies. Compare up to five companies with strong historical revenue or earnings growth. Explain what drives demand, whether growth seems sustainable, and whether the stock price already reflects optimism. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWQ",
+    "tags": [
+      "France",
+      "Growth companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P075",
+    "title": "France: Undervalued companies",
+    "category": "Countries & regions",
+    "task": "Focus on French-listed companies. Identify up to five potentially inexpensive companies using suitable sector-relative valuation ratios. Explain why each may trade cheaply and assess value-trap risks. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWQ",
+    "tags": [
+      "France",
+      "Undervalued companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P076",
+    "title": "Japan: Beginner country overview",
+    "category": "Countries & regions",
+    "task": "Focus on Japanese-listed companies. Explain how this stock market works, name major sectors and representative publicly traded companies, and compare three illustrative candidates. Explain currency risk and how a U.S. investor might access the market. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWJ",
+    "tags": [
+      "Japan",
+      "Beginner country overview"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P077",
+    "title": "Japan: Dividend opportunities",
+    "category": "Countries & regions",
+    "task": "Focus on Japanese-listed companies. Research up to five dividend-paying companies. Explain dividend yield, payout sustainability, currency effects, withholding taxes and business risks. Avoid assuming high yield means safety. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWJ",
+    "tags": [
+      "Japan",
+      "Dividend opportunities"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P078",
+    "title": "Japan: Growth companies",
+    "category": "Countries & regions",
+    "task": "Focus on Japanese-listed companies. Compare up to five companies with strong historical revenue or earnings growth. Explain what drives demand, whether growth seems sustainable, and whether the stock price already reflects optimism. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWJ",
+    "tags": [
+      "Japan",
+      "Growth companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P079",
+    "title": "Japan: Undervalued companies",
+    "category": "Countries & regions",
+    "task": "Focus on Japanese-listed companies. Identify up to five potentially inexpensive companies using suitable sector-relative valuation ratios. Explain why each may trade cheaply and assess value-trap risks. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWJ",
+    "tags": [
+      "Japan",
+      "Undervalued companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P080",
+    "title": "India: Beginner country overview",
+    "category": "Countries & regions",
+    "task": "Focus on Indian-listed companies. Explain how this stock market works, name major sectors and representative publicly traded companies, and compare three illustrative candidates. Explain currency risk and how a U.S. investor might access the market. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "INDA",
+    "tags": [
+      "India",
+      "Beginner country overview"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P081",
+    "title": "India: Dividend opportunities",
+    "category": "Countries & regions",
+    "task": "Focus on Indian-listed companies. Research up to five dividend-paying companies. Explain dividend yield, payout sustainability, currency effects, withholding taxes and business risks. Avoid assuming high yield means safety. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "INDA",
+    "tags": [
+      "India",
+      "Dividend opportunities"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P082",
+    "title": "India: Growth companies",
+    "category": "Countries & regions",
+    "task": "Focus on Indian-listed companies. Compare up to five companies with strong historical revenue or earnings growth. Explain what drives demand, whether growth seems sustainable, and whether the stock price already reflects optimism. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "INDA",
+    "tags": [
+      "India",
+      "Growth companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P083",
+    "title": "India: Undervalued companies",
+    "category": "Countries & regions",
+    "task": "Focus on Indian-listed companies. Identify up to five potentially inexpensive companies using suitable sector-relative valuation ratios. Explain why each may trade cheaply and assess value-trap risks. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "INDA",
+    "tags": [
+      "India",
+      "Undervalued companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P084",
+    "title": "China: Beginner country overview",
+    "category": "Countries & regions",
+    "task": "Focus on Chinese-listed companies. Explain how this stock market works, name major sectors and representative publicly traded companies, and compare three illustrative candidates. Explain currency risk and how a U.S. investor might access the market. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "MCHI",
+    "tags": [
+      "China",
+      "Beginner country overview"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P085",
+    "title": "China: Dividend opportunities",
+    "category": "Countries & regions",
+    "task": "Focus on Chinese-listed companies. Research up to five dividend-paying companies. Explain dividend yield, payout sustainability, currency effects, withholding taxes and business risks. Avoid assuming high yield means safety. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "MCHI",
+    "tags": [
+      "China",
+      "Dividend opportunities"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P086",
+    "title": "China: Growth companies",
+    "category": "Countries & regions",
+    "task": "Focus on Chinese-listed companies. Compare up to five companies with strong historical revenue or earnings growth. Explain what drives demand, whether growth seems sustainable, and whether the stock price already reflects optimism. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "MCHI",
+    "tags": [
+      "China",
+      "Growth companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P087",
+    "title": "China: Undervalued companies",
+    "category": "Countries & regions",
+    "task": "Focus on Chinese-listed companies. Identify up to five potentially inexpensive companies using suitable sector-relative valuation ratios. Explain why each may trade cheaply and assess value-trap risks. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "MCHI",
+    "tags": [
+      "China",
+      "Undervalued companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P088",
+    "title": "Brazil: Beginner country overview",
+    "category": "Countries & regions",
+    "task": "Focus on Brazilian-listed companies. Explain how this stock market works, name major sectors and representative publicly traded companies, and compare three illustrative candidates. Explain currency risk and how a U.S. investor might access the market. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWZ",
+    "tags": [
+      "Brazil",
+      "Beginner country overview"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P089",
+    "title": "Brazil: Dividend opportunities",
+    "category": "Countries & regions",
+    "task": "Focus on Brazilian-listed companies. Research up to five dividend-paying companies. Explain dividend yield, payout sustainability, currency effects, withholding taxes and business risks. Avoid assuming high yield means safety. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWZ",
+    "tags": [
+      "Brazil",
+      "Dividend opportunities"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P090",
+    "title": "Brazil: Growth companies",
+    "category": "Countries & regions",
+    "task": "Focus on Brazilian-listed companies. Compare up to five companies with strong historical revenue or earnings growth. Explain what drives demand, whether growth seems sustainable, and whether the stock price already reflects optimism. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWZ",
+    "tags": [
+      "Brazil",
+      "Growth companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P091",
+    "title": "Brazil: Undervalued companies",
+    "category": "Countries & regions",
+    "task": "Focus on Brazilian-listed companies. Identify up to five potentially inexpensive companies using suitable sector-relative valuation ratios. Explain why each may trade cheaply and assess value-trap risks. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWZ",
+    "tags": [
+      "Brazil",
+      "Undervalued companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P092",
+    "title": "Australia: Beginner country overview",
+    "category": "Countries & regions",
+    "task": "Focus on Australian-listed companies. Explain how this stock market works, name major sectors and representative publicly traded companies, and compare three illustrative candidates. Explain currency risk and how a U.S. investor might access the market. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWA",
+    "tags": [
+      "Australia",
+      "Beginner country overview"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P093",
+    "title": "Australia: Dividend opportunities",
+    "category": "Countries & regions",
+    "task": "Focus on Australian-listed companies. Research up to five dividend-paying companies. Explain dividend yield, payout sustainability, currency effects, withholding taxes and business risks. Avoid assuming high yield means safety. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWA",
+    "tags": [
+      "Australia",
+      "Dividend opportunities"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P094",
+    "title": "Australia: Growth companies",
+    "category": "Countries & regions",
+    "task": "Focus on Australian-listed companies. Compare up to five companies with strong historical revenue or earnings growth. Explain what drives demand, whether growth seems sustainable, and whether the stock price already reflects optimism. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWA",
+    "tags": [
+      "Australia",
+      "Growth companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P095",
+    "title": "Australia: Undervalued companies",
+    "category": "Countries & regions",
+    "task": "Focus on Australian-listed companies. Identify up to five potentially inexpensive companies using suitable sector-relative valuation ratios. Explain why each may trade cheaply and assess value-trap risks. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWA",
+    "tags": [
+      "Australia",
+      "Undervalued companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P096",
+    "title": "South Korea: Beginner country overview",
+    "category": "Countries & regions",
+    "task": "Focus on South Korean-listed companies. Explain how this stock market works, name major sectors and representative publicly traded companies, and compare three illustrative candidates. Explain currency risk and how a U.S. investor might access the market. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWY",
+    "tags": [
+      "South Korea",
+      "Beginner country overview"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P097",
+    "title": "South Korea: Dividend opportunities",
+    "category": "Countries & regions",
+    "task": "Focus on South Korean-listed companies. Research up to five dividend-paying companies. Explain dividend yield, payout sustainability, currency effects, withholding taxes and business risks. Avoid assuming high yield means safety. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWY",
+    "tags": [
+      "South Korea",
+      "Dividend opportunities"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P098",
+    "title": "South Korea: Growth companies",
+    "category": "Countries & regions",
+    "task": "Focus on South Korean-listed companies. Compare up to five companies with strong historical revenue or earnings growth. Explain what drives demand, whether growth seems sustainable, and whether the stock price already reflects optimism. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWY",
+    "tags": [
+      "South Korea",
+      "Growth companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P099",
+    "title": "South Korea: Undervalued companies",
+    "category": "Countries & regions",
+    "task": "Focus on South Korean-listed companies. Identify up to five potentially inexpensive companies using suitable sector-relative valuation ratios. Explain why each may trade cheaply and assess value-trap risks. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWY",
+    "tags": [
+      "South Korea",
+      "Undervalued companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P100",
+    "title": "Taiwan: Beginner country overview",
+    "category": "Countries & regions",
+    "task": "Focus on Taiwanese-listed companies. Explain how this stock market works, name major sectors and representative publicly traded companies, and compare three illustrative candidates. Explain currency risk and how a U.S. investor might access the market. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWT",
+    "tags": [
+      "Taiwan",
+      "Beginner country overview"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P101",
+    "title": "Taiwan: Dividend opportunities",
+    "category": "Countries & regions",
+    "task": "Focus on Taiwanese-listed companies. Research up to five dividend-paying companies. Explain dividend yield, payout sustainability, currency effects, withholding taxes and business risks. Avoid assuming high yield means safety. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWT",
+    "tags": [
+      "Taiwan",
+      "Dividend opportunities"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P102",
+    "title": "Taiwan: Growth companies",
+    "category": "Countries & regions",
+    "task": "Focus on Taiwanese-listed companies. Compare up to five companies with strong historical revenue or earnings growth. Explain what drives demand, whether growth seems sustainable, and whether the stock price already reflects optimism. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWT",
+    "tags": [
+      "Taiwan",
+      "Growth companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P103",
+    "title": "Taiwan: Undervalued companies",
+    "category": "Countries & regions",
+    "task": "Focus on Taiwanese-listed companies. Identify up to five potentially inexpensive companies using suitable sector-relative valuation ratios. Explain why each may trade cheaply and assess value-trap risks. Use dated sources and clarify exchange, currency and listing type.",
+    "benchmark": "EWT",
+    "tags": [
+      "Taiwan",
+      "Undervalued companies"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P104",
+    "title": "What is a stock?",
+    "category": "Learn the market",
+    "task": "Explain shares, ownership, stock prices, dividends, and capital gains with an everyday example. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P105",
+    "title": "How to read a stock quote",
+    "category": "Learn the market",
+    "task": "Explain ticker symbols, market capitalization, volume, 52-week range, bid/ask and what prices do not tell you. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P106",
+    "title": "What makes a stock expensive?",
+    "category": "Learn the market",
+    "task": "Teach P/E, P/B, and price-to-sales using three illustrative companies, including when each ratio is misleading. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P107",
+    "title": "Understanding earnings reports",
+    "category": "Learn the market",
+    "task": "Walk through revenue, net income, EPS, guidance, and why a stock can fall after good earnings. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P108",
+    "title": "How dividends work",
+    "category": "Learn the market",
+    "task": "Explain dividend dates, yields, payout ratios, reinvestment, and risks of dividend cuts. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P109",
+    "title": "ETFs versus individual stocks",
+    "category": "Learn the market",
+    "task": "Compare diversification, fees, risk, and maintenance using beginner-friendly examples. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P110",
+    "title": "How to compare competitors",
+    "category": "Learn the market",
+    "task": "Choose three companies in one industry and show a beginner-friendly side-by-side research checklist. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P111",
+    "title": "What moves stock prices?",
+    "category": "Learn the market",
+    "task": "Explain earnings, interest rates, investor expectations, news, and sentiment without suggesting prices are predictable. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P112",
+    "title": "Bull and bear cases",
+    "category": "Learn the market",
+    "task": "Create a balanced optimistic and pessimistic scenario for a supplied ticker and list evidence that could change either case. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P113",
+    "title": "What is a recession?",
+    "category": "Learn the market",
+    "task": "Explain recessions, earnings cycles, defensive sectors, and why the stock market can move before the economy. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P114",
+    "title": "How interest rates affect stocks",
+    "category": "Learn the market",
+    "task": "Explain discount rates, borrowing costs, banks, real estate and growth stocks using simple examples. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P115",
+    "title": "What is a balance sheet?",
+    "category": "Learn the market",
+    "task": "Explain assets, liabilities, equity, debt, cash and why financial strength matters. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P116",
+    "title": "Understanding cash flow",
+    "category": "Learn the market",
+    "task": "Explain operating cash flow, capital spending and free cash flow with an example. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P117",
+    "title": "Stock buybacks explained",
+    "category": "Learn the market",
+    "task": "Explain buybacks, dilution, EPS effects and when repurchases destroy value. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P118",
+    "title": "How to research a company in 20 minutes",
+    "category": "Learn the market",
+    "task": "Create a practical beginner research routine using investor relations pages and SEC filings. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P119",
+    "title": "Finding reliable financial sources",
+    "category": "Learn the market",
+    "task": "Compare company filings, earnings releases, analyst estimates, news, and social media; show a verification checklist. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P120",
+    "title": "What does beta mean?",
+    "category": "Learn the market",
+    "task": "Explain beta and volatility, with limitations and why risk is more than price movement. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P121",
+    "title": "What are RSI and MACD?",
+    "category": "Learn the market",
+    "task": "Explain these technical indicators without implying they predict future returns. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P122",
+    "title": "How to spot red flags",
+    "category": "Learn the market",
+    "task": "Teach beginner warning signs including debt stress, accounting issues, customer concentration and unrealistic growth claims. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P123",
+    "title": "Build a watchlist",
+    "category": "Learn the market",
+    "task": "Create a watchlist template with thesis, valuation, catalysts, risks, data date and reasons to revisit. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P124",
+    "title": "Media companies and advertising",
+    "category": "Learn the market",
+    "task": "Research how advertising cycles, streaming subscribers, content spending and audience trends affect listed media companies. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P125",
+    "title": "Sports and entertainment stocks",
+    "category": "Learn the market",
+    "task": "Compare publicly traded sports, entertainment, gaming-adjacent media, and venue companies, noting limited pure-play options. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P126",
+    "title": "AI investment themes",
+    "category": "Learn the market",
+    "task": "Map the AI supply chain across chips, cloud, software and power infrastructure, then compare opportunities and risks. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P127",
+    "title": "Clean energy stocks",
+    "category": "Learn the market",
+    "task": "Explain solar, wind, batteries and grid investment, including subsidies, rates and capital intensity. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P128",
+    "title": "Cybersecurity stocks",
+    "category": "Learn the market",
+    "task": "Explain recurring revenue, retention, competition and valuation for cybersecurity companies. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P129",
+    "title": "Banking stocks for beginners",
+    "category": "Learn the market",
+    "task": "Explain net interest margin, credit losses, deposits, capital ratios and why banks need different metrics. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P130",
+    "title": "REITs for beginners",
+    "category": "Learn the market",
+    "task": "Explain FFO/AFFO, property occupancy, debt maturities and why P/E can be misleading for REITs. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P131",
+    "title": "Healthcare investing for beginners",
+    "category": "Learn the market",
+    "task": "Explain patents, drug trials, reimbursement and regulatory risk in healthcare stocks. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P132",
+    "title": "Consumer brands and pricing power",
+    "category": "Learn the market",
+    "task": "Research how brand loyalty, margins and price increases affect consumer businesses. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  },
+  {
+    "id": "P133",
+    "title": "Currency risk for international stocks",
+    "category": "Learn the market",
+    "task": "Explain how foreign exchange rates can raise or reduce U.S.-dollar investment returns. Use clear examples, define jargon, and end with three questions a beginner should ask.",
+    "benchmark": "SPY",
+    "tags": [
+      "Education",
+      "Beginner"
+    ],
+    "level": "Beginner"
+  }
+]

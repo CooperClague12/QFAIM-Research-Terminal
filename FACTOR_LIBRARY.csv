@@ -1,0 +1,62 @@
+category,factor,favorable_direction,applicability_notes
+Valuation,P/E,lower,All; compare business peers
+Valuation,Forward P/E,lower,All; estimate quality matters
+Valuation,P/B,lower,Banks/insurers; interpret alongside ROE
+Valuation,PEG,lower,All; sensitive to growth assumptions
+Valuation,EV/EBITDA,lower,Nonbank operating companies; usually unsuitable for banks
+Valuation,EV/Sales,lower,Nonbank operating companies
+Valuation,Price/Sales,lower,All; margin context required
+Valuation,FCF Yield,higher,Nonbanks; conventional FCF often unsuitable for banks
+Valuation,Dividend Yield,context,All; high yield may signal distress
+Growth & Profitability,Revenue Growth,higher,All; use consistent revenue definitions
+Growth & Profitability,EPS Growth,higher,All; check one-time items
+Growth & Profitability,Net Income Growth,higher,All
+Growth & Profitability,Operating Margin,higher,Nonbanks; not directly comparable to banks
+Growth & Profitability,Net Profit Margin,higher,All; peer-specific
+Growth & Profitability,Gross Margin,higher,Nonbank operating companies
+Growth & Profitability,ROE,higher,All; leverage context
+Growth & Profitability,ROIC,higher,Nonbanks; usually unsuitable for banks
+Growth & Profitability,ROA,higher,All; compare business peers
+Growth & Profitability,EBITDA Growth,higher,Nonbanks
+Financial Strength,Free Cash Flow,higher,Nonbanks; unsuitable as standard bank measure
+Financial Strength,Operating Cash Flow,higher,Nonbanks; bank comparability limited
+Financial Strength,Debt/Equity,lower,Nonbanks; banking debt is operational
+Financial Strength,Net Debt/EBITDA,lower,Nonbanks
+Financial Strength,Interest Coverage,higher,Nonbanks
+Financial Strength,Current Ratio,higher,Nonbanks
+Financial Strength,Cash Conversion,higher,Nonbanks
+Financial Strength,Dividend Payout Ratio,context,All; lower is not always better
+Technical & Momentum,Relative Strength,higher,All; define benchmark and lookback
+Technical & Momentum,YTD Return,higher,All
+Technical & Momentum,1Y Return,higher,All
+Technical & Momentum,RSI,context,All; specify overbought/oversold strategy
+Technical & Momentum,MACD,context,All; specify signal rule
+Technical & Momentum,VWAP,context,All; time window required
+Technical & Momentum,ATR,context,All; volatility measure
+Technical & Momentum,50-Day Moving Average,context,All; compare with price
+Technical & Momentum,200-Day Moving Average,context,All; compare with price
+Technical & Momentum,Bollinger Bands,context,All; specify rule
+Technical & Momentum,Trading Volume,higher,All; liquidity context
+Technical & Momentum,Volatility,context,All; risk preference
+Technical & Momentum,Beta,context,All; risk preference
+Options & Sentiment,Implied Volatility,context,Optionable stocks only
+Options & Sentiment,Options Open Interest,higher,Optionable stocks; liquidity
+Options & Sentiment,Put/Call Ratio,context,Optionable stocks; signal ambiguous
+Options & Sentiment,Options Skew,context,Optionable stocks
+Options & Sentiment,Options Greeks,context,Optionable stocks; contract specific
+Options & Sentiment,Short Interest,context,All; squeeze and risk
+Options & Sentiment,News Sentiment,context,All; methodology needed
+Options & Sentiment,Analyst Ratings,context,All; bias possible
+Options & Sentiment,EPS Revisions,higher,All; define revision window
+Options & Sentiment,Price Targets,context,All; use implied upside cautiously
+Macro & Institutional,Treasury Yields,context,Macro overlay
+Macro & Institutional,Credit Spreads,context,Macro overlay
+Macro & Institutional,VIX,context,Macro overlay
+Macro & Institutional,CPI,context,Macro overlay
+Macro & Institutional,GDP Growth,context,Macro overlay
+Macro & Institutional,Interest Rate Sensitivity,context,All; methodology required
+Macro & Institutional,ETF Flows,context,Sector/fund overlay
+Macro & Institutional,13F Holdings,context,Lagged institutional disclosures
+Macro & Institutional,Insider Buying,higher,All; disclosure timing
+Macro & Institutional,Sector Relative Performance,higher,All; benchmark required
+Macro & Institutional,Subscriber/User Growth,higher,Business-model specific
