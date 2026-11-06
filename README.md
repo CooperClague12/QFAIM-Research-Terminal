@@ -31,3 +31,15 @@ python3 -m streamlit run QFAIM_Website.py
 - Yahoo Finance through yfinance is an unofficial data source and may be delayed, rate-limited, or incomplete.
 - Factor scores are relative to the supplied comparison group, not forecasts or investment recommendations.
 - This package has been syntax-checked, but a full live deployment and provider fetch have not been verified.
+
+
+## Run AI Research inside the website
+The Research studio now has a **Run AI Research** button. It sends the four-block research brief to the OpenAI Responses API, optionally using web search, and displays a downloadable Markdown report. The feature needs an OpenAI API key and incurs API usage charges separate from ChatGPT subscriptions.
+
+For a public Streamlit deployment, go to your app's **Settings → Secrets** and add:
+
+```toml
+OPENAI_API_KEY = "your-real-key-here"
+```
+
+Do **not** put your real key in GitHub or any file you upload. The app can also accept a visitor-supplied key in a password field for that browser session if no server key is configured. If you publish an app with your own server key, visitors can generate reports at your expense; monitor usage and set spending limits in your OpenAI API account. The feature does not execute trades, guarantee current quotes, or discover an exhaustive universe of securities.

@@ -1,11 +1,13 @@
 """QFAIM Academic Edition — four-block research studio and refreshable screener."""
 from __future__ import annotations
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 import pandas as pd
 import streamlit as st
-from qfaim_engine import METRICS, fetch, score
+from qfaim_engine import METRICS, fetch
+from openai import OpenAI
 
 ROOT = Path(__file__).resolve().parent
 LIBRARY = json.loads((ROOT / 'BLOCK3_PROMPT_LIBRARY.json').read_text(encoding='utf-8'))
@@ -63,9 +65,8 @@ for key, value in {
  'behavior_preset':'Beginner-friendly teacher', 'behavior':BEHAVIORS['Beginner-friendly teacher'],
  'task_choice':LIBRARY[0]['title'], 'task':LIBRARY[0]['task'],
  'category':'All topics', 'search':'', 'selected':DEFAULT_FACTORS,
- 'tickers':'JPM, GS, MS', 'benchmark':'XLF', 'refresh_mins':10,
- 'auto_refresh':False, 'min_coverage':50, 'bank_adjust':True,
- 'last_results':None,'last_raw':None,'last_fetch':None,
+ 'single_ticker':'', 'single_stock_result':None, 'single_stock_checked':None,
+ 'ai_answer':None,'ai_prompt':None,'ai_model':'gpt-4.1-mini','ai_web':True,
 }.items():
  if key not in st.session_state: st.session_state[key] = value
 
@@ -88,6 +89,36 @@ def build_prompt():
   'RESEARCH STANDARDS\nUse dated, verifiable sources. Define unfamiliar terms. State universe, peer set, benchmark and data availability. Do not fabricate factor values or claim whole-market coverage without verification. Show risks and explain any normalization or missing-data handling. This is educational research, not individualized investment advice.'
  ])
 
+def get_api_key():
+ # The owner can configure OPENAI_API_KEY in Streamlit Secrets; visitors never see it.
+ try:
+  secret = st.secrets.get('OPENAI_API_KEY', '')
+  if secret: return str(secret)
+ except Exception:
+  pass
+ return os.environ.get('OPENAI_API_KEY', '') or st.session_state.get('visitor_api_key', '')
+
+def run_ai_research(prompt, model, use_web):
+ key = get_api_key()
+ if not key:
+  raise ValueError('No OpenAI API key configured. Add OPENAI_API_KEY to Streamlit app secrets, or enter your own key in the research panel.')
+ client = OpenAI(api_key=key, timeout=120.0, max_retries=1)
+ instructions = ("You are the research analyst for QFAIM, an educational equity-research website. "
+  "Fulfill the four-block research request. Be understandable to the user's stated experience level. "
+  "When a request is broad, choose a reasonable, explicitly stated scope rather than refusing. "
+  "Use clear section headings, comparisons and risk factors. Separate facts, estimates and opinion. "
+  "Never invent live prices, valuations, source citations, company financials, or screening coverage. "
+  "If data cannot be verified, say so and offer a research method instead. "
+  "For country-specific and sector screens, describe how candidates were selected and don't claim exhaustive coverage. "
+  "If web search is available, cite the underlying sources with dates and links in the report. "
+  "This is general educational research, not personalized investment advice.")
+ kwargs = {'model': model, 'instructions': instructions, 'input': prompt, 'max_output_tokens': 3800}
+ if use_web: kwargs['tools'] = [{'type': 'web_search_preview'}]
+ response = client.responses.create(**kwargs)
+ result = (response.output_text or '').strip()
+ if not result: raise RuntimeError('The AI returned no readable report. Please try again.')
+ return result
+
 st.markdown('<div class="brandline">▥ &nbsp; QFAIM <span style="font:500 .78rem DM Sans,sans-serif;color:#789082">/ RESEARCH TERMINAL</span></div>',unsafe_allow_html=True)
 st.markdown('''<div class="hero"><div class="eyebrow">Independent equity research · Academic edition</div><div class="hero-title">Learn the market.<br>Research with confidence.</div><div class="hero-sub">A guided stock research workspace for curious beginners and experienced investors. Choose how your analyst thinks, explore 133 ready-made research ideas, and compare companies with transparent data.</div><div class="hero-foot">FOUR-BLOCK RESEARCH SYSTEM &nbsp; · &nbsp; 133 CURATED PROMPTS &nbsp; · &nbsp; REFRESHABLE STOCK SCREENING</div></div>''',unsafe_allow_html=True)
 
@@ -95,7 +126,7 @@ cols=st.columns(4,gap='small')
 for c,(n,title,desc) in zip(cols,[('01','Your profile','Set your experience and learning goals.'),('02','Analyst style','Choose how research is explained.'),('03','Research question','Pick from 133 ideas or write your own.'),('04','Financial factors','Select and weight the metrics that matter.')]):
  with c:st.markdown(f'<div class="step-card"><div class="step-num">BLOCK {n}</div><div class="step-title">{title}</div><div class="step-copy">{desc}</div></div>',unsafe_allow_html=True)
 
-studio, screener, guide = st.tabs(['✦  Research studio','▥  Stock screener','ⓘ  About & deployment'])
+studio, screener, guide = st.tabs(['✦  Research studio','▥  Stock snapshot','ⓘ  About & deployment'])
 with studio:
  st.markdown('### Build your research assignment')
  st.caption('Complete the four blocks below. Your research prompt updates instantly as you edit.')
@@ -148,86 +179,167 @@ with studio:
    st.download_button('↓ Download research prompt',prompt,'QFAIM_research_prompt.txt','text/plain',type='primary',use_container_width=True)
    config={'profile':st.session_state.profile,'behavior':st.session_state.behavior,'behavior_preset':st.session_state.behavior_preset,'task':st.session_state.task,'task_choice':st.session_state.task_choice,'factors':st.session_state.selected,'weights':weights()}
    st.download_button('↓ Save configuration (JSON)',json.dumps(config,indent=2),'QFAIM_configuration.json','application/json',use_container_width=True)
+   st.divider()
+   st.markdown('#### ✦ Run your research here')
+   st.write('Generate a complete AI research report from the four blocks above, without leaving QFAIM.')
+   st.selectbox('AI model', ['gpt-4.1-mini', 'gpt-4.1'], key='ai_model', help='The mini model generally costs less; the larger model can be more thorough. Both use paid API usage.')
+   st.checkbox('Search the web for current sources', key='ai_web', help='Web search may increase API usage charges. It can improve factual freshness but does not guarantee complete market coverage.')
+   if not get_api_key():
+    st.text_input('OpenAI API key (this session only)', type='password', key='visitor_api_key', placeholder='sk-...', help='For personal testing. For a public site, configure OPENAI_API_KEY in Streamlit Community Cloud Secrets instead. Do not put keys in GitHub.')
+   if st.button('✦ Run AI Research', type='primary', use_container_width=True):
+    st.session_state.ai_answer = None
+    st.session_state.ai_prompt = None
+    if not st.session_state.profile.strip() or not st.session_state.task.strip():
+     st.error('Complete your profile and research question first.')
+    else:
+     with st.spinner('Researching your question and writing the report… this may take a minute.'):
+      try:
+       answer = run_ai_research(prompt, st.session_state.ai_model, st.session_state.ai_web)
+       st.session_state.ai_answer = answer
+       st.session_state.ai_prompt = prompt
+      except Exception as exc:
+       st.error(f'Unable to generate the report: {exc}')
+   if st.session_state.ai_answer:
+    if st.session_state.ai_prompt != prompt:
+     st.warning('The report below was generated from an earlier version of your four blocks. Click Run AI Research again to update it.')
+    st.markdown('#### Your AI research report')
+    st.markdown(st.session_state.ai_answer)
+    st.download_button('↓ Download AI report', st.session_state.ai_answer, 'QFAIM_AI_research_report.md', 'text/markdown', use_container_width=True)
+   st.caption('AI research can contain errors. Verify figures and cited sources before making investment decisions. API usage is billed by the API provider.')
    st.markdown('<div class="soft-note">Tip: Choose <b>Beginner-friendly teacher</b> if you are new to the market. You can always switch to a more technical analyst later.</div>',unsafe_allow_html=True)
   with st.container(border=True):
    st.markdown('#### How the four blocks fit together')
    st.write('**Profile** sets the audience. **Analyst style** sets the tone and rigor. **Research question** sets the task. **Financial factors** define the measurements.')
-   st.caption('The research studio creates instructions. It does not itself execute a language model or automatically discover all stocks in a sector.')
+   st.caption('Run AI Research generates a report using an OpenAI API key. The stock snapshot shows available metrics for one ticker at a time; AI research does not guarantee an exhaustive sector screen.')
 
-@st.cache_data(ttl=240,show_spinner=False)
-def retrieve(tickers:tuple[str,...],benchmark:str):
- rows,errors=[],[]
- for t in tickers:
-  try:rows.append(fetch(t,benchmark))
-  except Exception as exc:errors.append(f'{t}: {str(exc)[:130]}')
- return pd.DataFrame(rows),errors
+@st.cache_data(ttl=240, show_spinner=False)
+def get_single_stock(ticker: str):
+    return fetch(ticker, 'SPY')
 
-def do_screen(force=False):
- names=list(dict.fromkeys(t.strip().upper() for t in st.session_state.tickers.replace('\n',',').split(',') if t.strip()))
- if not names:st.warning('Enter at least one ticker to start.');return
- if len(names)>30:st.error('Please enter no more than 30 tickers.');return
- if not st.session_state.selected:st.warning('Choose at least one factor in Block 4 first.');return
- w=weights()
- if not any(v>0 for v in w.values()):st.warning('Choose at least one factor with a positive weight.');return
- if force:retrieve.clear()
- raw,errors=retrieve(tuple(names),st.session_state.benchmark.strip().upper() or 'SPY')
- if errors:st.warning('Some data could not be retrieved: '+' | '.join(errors))
- if raw.empty:st.error('No usable data returned. Check ticker symbols and provider availability.');return
- st.session_state.last_raw=raw
- st.session_state.last_results=score(raw,st.session_state.selected,w,st.session_state.bank_adjust)
- st.session_state.last_fetch=datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+
+def metric_display(name, value):
+    if value is None or pd.isna(value):
+        return 'Not available'
+    value = float(value)
+    if name in {'ROE', 'ROA', 'Operating Margin', 'Revenue Growth', 'Earnings Growth',
+                'Dividend Yield', 'FCF Yield', 'Relative Strength 6M', '1Y Return'}:
+        return f'{value * 100:,.2f}%'
+    if name == 'MACD Histogram':
+        return f'{value:+,.2f}% of price'
+    if name in {'Trailing P/E', 'Forward P/E', 'P/B', 'PEG', 'EV/EBITDA'}:
+        return f'{value:,.2f}x'
+    if name == 'Debt/Equity':
+        return f'{value:,.1f}%'  # Yahoo Finance reports this ratio in percentage points
+    return f'{value:,.2f}'
+
+
+def compact_amount(value, currency='USD'):
+    if value is None or pd.isna(value):
+        return 'Not available'
+    value = float(value)
+    prefix = '$' if currency == 'USD' else f'{currency} '
+    for scale, suffix in [(1e12, 'T'), (1e9, 'B'), (1e6, 'M')]:
+        if abs(value) >= scale:
+            return f'{prefix}{value / scale:,.2f}{suffix}'
+    return f'{prefix}{value:,.2f}'
+
+
+def quick_take(stock):
+    def num(k):
+        value = stock.get(k)
+        return float(value) if value is not None and pd.notna(value) else None
+    name = stock.get('Company') or stock['Ticker']
+    sector = stock.get('Sector') or 'an unspecified sector'
+    industry = stock.get('Industry')
+    cap = num('Market Cap')
+    intro = f"**{name} ({stock['Ticker']})** operates in {sector}"
+    if industry:
+        intro += f' ({industry})'
+    intro += '.'
+    if cap is not None:
+        intro += f" Its reported market capitalization is {compact_amount(cap, stock.get('Currency') or 'USD')}."
+    details = []
+    pe = num('Trailing P/E')
+    if pe is not None and pe > 0:
+        details.append(f'It trades at roughly **{pe:.1f} times trailing earnings**; this is a valuation multiple, not a standalone verdict on whether the stock is cheap.')
+    growth = num('Revenue Growth')
+    if growth is not None:
+        details.append(f"Reported revenue growth is **{growth * 100:+.1f}%** ({'positive' if growth >= 0 else 'negative'}), based on the data provider’s reporting period.")
+    roe = num('ROE')
+    if roe is not None:
+        details.append(f'Its return on equity is **{roe * 100:.1f}%**, although comparisons should account for industry and leverage.')
+    ret = num('1Y Return')
+    if ret is not None:
+        details.append(f'The adjusted one-year price return is approximately **{ret * 100:+.1f}%**; past performance does not predict future results.')
+    if not details:
+        details.append('Several key financial figures are unavailable from the data provider, so a meaningful valuation assessment is limited.')
+    return ' '.join([intro] + details[:3]) + ' **Research takeaway:** Compare these figures with similar companies, check the latest filings, and consider business risks before drawing a conclusion.'
+
 
 with screener:
- st.markdown('### Compare publicly traded companies')
- st.caption('Enter up to 30 ticker symbols. QFAIM fetches available financial data, calculates selected factors, and ranks only the stocks you provide.')
- sleft,sright=st.columns([1.15,.85],gap='large')
- with sleft:
-  with st.container(border=True):
-   st.text_area('Ticker symbols, separated by commas',key='tickers',height=82)
-   st.text_input('Comparison benchmark (ticker)',key='benchmark',help='For example: SPY for the broad U.S. market or XLF for financials.')
-   a,b=st.columns(2)
-   with a: run=st.button('↻  Refresh market data',type='primary',use_container_width=True)
-   with b:st.selectbox('Auto-refresh interval',options=[5,10,15,30,60],format_func=lambda n:f'{n} minutes',key='refresh_mins')
-   st.toggle('Auto-refresh while this page is open',key='auto_refresh')
-   st.caption('Quotes may be delayed. Data is provided by an unofficial Yahoo Finance interface and can be missing or rate-limited.')
-  if run:
-   with st.spinner('Collecting prices and financial metrics…'):do_screen(force=True)
- with sright:
-  st.markdown('#### Before you screen')
-  st.markdown('<div class="soft-note">Your <b>Block 4 factor selection</b> controls the scoring. To change factors or weights, visit the Research studio tab. A score of 80/100 means relatively strong performance <b>within your chosen ticker list</b>, not an 80% chance of success.</div>',unsafe_allow_html=True)
-  st.write('**Example tickers:** JPM, GS, MS, TBBK, HBT, SBSI')
-  st.write('**Available metrics:** valuation, growth, profitability, momentum and risk.')
-  st.write('**Outputs:** ranking table, comparison chart and downloadable CSV.')
- @st.fragment(run_every=(f'{st.session_state.refresh_mins}m' if st.session_state.auto_refresh else None))
- def results():
-  if st.session_state.auto_refresh:do_screen()
-  ranked=st.session_state.last_results
-  if ranked is None:
-   st.info('Your results will appear here after you click **Refresh market data**.')
-   return
-  st.markdown('### Research results')
-  st.caption(f"Last checked: {st.session_state.last_fetch} · Data may be cached up to 4 minutes · Peer rankings, not buy recommendations")
-  eligible=ranked[ranked['Coverage %']>=st.session_state.min_coverage].copy()
-  if eligible.empty:st.warning('No stocks meet the minimum data-coverage setting. Try fewer factors or a lower threshold.')
-  else:
-   c1,c2,c3=st.columns(3)
-   c1.metric('Companies scored',len(eligible))
-   c2.metric('Highest ranked',str(eligible.iloc[0]['Ticker']))
-   c3.metric('Top composite score',f"{eligible.iloc[0]['Composite Score']:.1f}/100")
-   cols=['Ticker','Company','Market Cap','Price','Price Date','Composite Score','Coverage %']+st.session_state.selected
-   st.dataframe(eligible[cols],hide_index=True,use_container_width=True)
-   st.bar_chart(eligible.set_index('Ticker')['Composite Score'],color='#287050')
-  st.download_button('↓ Download rankings (CSV)',ranked.to_csv(index=False).encode(),'QFAIM_rankings.csv','text/csv')
-  st.download_button('↓ Download raw data (CSV)',st.session_state.last_raw.to_csv(index=False).encode(),'QFAIM_raw_data.csv','text/csv')
-  with st.expander('Review factor scores and missing data'):
-   cols=['Ticker','Industry','Composite Score','Coverage %']+[f'Score: {m}' for m in st.session_state.selected]
-   st.dataframe(ranked[cols],hide_index=True,use_container_width=True)
-   st.caption('Scores are weighted peer percentiles. Missing values are excluded. Ratios unsuitable for banks can be omitted. Factors with fewer than two usable observations are not scored.')
- results()
+    st.markdown('### Stock snapshot')
+    st.caption('Enter one ticker to see its available quantitative factors and a plain-English company breakdown. No factor selection or API key required.')
+    with st.form('single_ticker_lookup', clear_on_submit=False):
+        entry, action = st.columns([4, 1], vertical_alignment='bottom')
+        with entry:
+            ticker_input = st.text_input('Stock ticker', placeholder='e.g., AAPL, JPM, MSFT, TBBK', max_chars=20, key='single_ticker')
+        with action:
+            submitted = st.form_submit_button('Analyze stock', type='primary', use_container_width=True)
+    if submitted:
+        import re
+        ticker = ticker_input.strip().upper()
+        if not re.fullmatch(r'[A-Z0-9^.=\-]{1,15}', ticker):
+            st.error('Please enter one valid ticker symbol, such as AAPL or BRK-B.')
+        else:
+            try:
+                with st.spinner(f'Loading financial data for {ticker}…'):
+                    get_single_stock.clear()
+                    stock = get_single_stock(ticker)
+                st.session_state.single_stock_result = stock
+                st.session_state.single_stock_checked = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+            except Exception as exc:
+                st.session_state.single_stock_result = None
+                st.error(f'Unable to retrieve {ticker}: {str(exc)[:220]}. Please try again later.')
+    stock = st.session_state.get('single_stock_result')
+    if stock:
+        st.markdown(f"### {stock.get('Company') or stock['Ticker']} · {stock['Ticker']}")
+        st.caption(f"{stock.get('Sector') or 'Sector unavailable'} · {stock.get('Industry') or 'Industry unavailable'} · Price date: {stock.get('Price Date') or 'unknown'} · Retrieved: {st.session_state.get('single_stock_checked', 'unknown')}")
+        currency = stock.get('Currency') or 'USD'
+        p1, p2, p3 = st.columns(3)
+        p1.metric('Last available price', compact_amount(stock.get('Price'), currency))
+        p2.metric('Market capitalization', compact_amount(stock.get('Market Cap'), currency))
+        p3.metric('1-year adjusted return', metric_display('1Y Return', stock.get('1Y Return')))
+        with st.container(border=True):
+            st.markdown('#### In plain English')
+            st.markdown(quick_take(stock))
+        st.markdown('#### Quantitative factor breakdown')
+        st.caption('All 18 factors currently calculated by the QFAIM data engine are shown below, including unavailable values. This is not the entire 60+ factor idea library.')
+        sections = {
+            'Valuation': ['Trailing P/E', 'Forward P/E', 'P/B', 'PEG', 'EV/EBITDA', 'FCF Yield'],
+            'Profitability & growth': ['ROE', 'ROA', 'Operating Margin', 'Revenue Growth', 'Earnings Growth'],
+            'Financial strength & income': ['Debt/Equity', 'Dividend Yield'],
+            'Price trends & risk': ['Beta', 'Relative Strength 6M', 'RSI 14', 'MACD Histogram', '1Y Return'],
+        }
+        for section, factors in sections.items():
+            st.markdown(f'**{section}**')
+            rows = [{'Factor': factor, 'Value': metric_display(factor, stock.get(factor))} for factor in factors]
+            st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
+        st.download_button('↓ Download all factor values (CSV)',
+            pd.DataFrame([{'Ticker': stock['Ticker'], 'Company': stock.get('Company'), 'Factor': m,
+                           'Raw value': stock.get(m), 'Display value': metric_display(m, stock.get(m))}
+                          for m in METRICS]).to_csv(index=False).encode('utf-8'),
+            file_name=f"QFAIM_{stock['Ticker']}_factors.csv", mime='text/csv')
+        st.info('Figures are supplied through an unofficial Yahoo Finance interface and may be delayed, stale, missing, or inconsistent across industries. The blurb is a rules-based summary of available data, not an AI-generated investment recommendation. Verify important numbers against company filings.')
+    else:
+        st.markdown('<div class="soft-note">Try <b>AAPL</b> for Apple, <b>JPM</b> for JPMorgan, or <b>MS</b> for Morgan Stanley. You will see a short company overview and a table of financial factors.</div>', unsafe_allow_html=True)
 
 with guide:
  st.markdown('### About QFAIM')
- st.write('QFAIM began as a modular equity research workflow and now combines a guided prompt builder with a small-universe stock screener. It is designed to make financial research more approachable without hiding uncertainty.')
+ st.write('QFAIM began as a modular equity research workflow and now combines a guided prompt builder with a single-stock quantitative snapshot. It is designed to make financial research more approachable without hiding uncertainty.')
+ st.markdown('### AI research setup')
+ st.write('The **Run AI Research** button calls the OpenAI API to generate a report from your four blocks. It can optionally search the web for current sources. API billing is separate from ChatGPT subscriptions.')
+ st.code('OPENAI_API_KEY = \"your-api-key-here\"', language='toml')
+ st.caption('In Streamlit Community Cloud: open your app → Settings → Secrets, paste the key in TOML format, save, and reboot if prompted. Never commit an API key to GitHub. Alternatively, visitors can enter their own key for the current session.')
  st.markdown('### Publish this Academic Edition')
  st.markdown('''1. Extract the ZIP package and open the `QFAIM_Academic_Website` folder.
 2. In your existing GitHub repository, replace the old `QFAIM_Website.py` and `.streamlit/config.toml` with the new files. Upload the remaining project files if missing. Keep the same folder structure.
@@ -235,4 +347,17 @@ with guide:
 4. Streamlit should redeploy the app at the **same website address**. Check deployment logs if the site shows an error.
 
 To run locally: `python3 -m pip install -r requirements.txt` then `python3 -m streamlit run QFAIM_Website.py`.''')
- st.warning('Market data is not guaranteed live or complete. The screener does not scan the entire market, execute trades, or provide individualized financial advice. Confirm key figures using issuer filings.')
+ st.warning('Market data is not guaranteed live or complete. The stock snapshot does not scan the entire market, execute trades, or provide individualized financial advice. Confirm key figures using issuer filings.')
+
+# Persistent site-wide footer: displayed below every workspace tab.
+st.divider()
+st.markdown('''
+<div style="text-align:center; padding: 1.15rem 1rem 2rem; color:#46604d; font-size:0.88rem; line-height:1.65;">
+<strong>School Project Disclaimer</strong><br>
+QFAIM is an educational school project created to explore financial research,
+quantitative analysis, and AI-assisted learning. It is not a professional investment
+advisory service. Information and AI-generated responses may be inaccurate,
+incomplete, or outdated and should not be treated as personalized financial advice.
+Always verify financial data with reliable primary sources before making investment decisions.
+</div>
+''', unsafe_allow_html=True)
